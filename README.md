@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+# kazlastword.github.io
 
-You can use the [editor on GitHub](https://github.com/kazlastword/kazlastword.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Последнее слово. Казахстан**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Зачем?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Вдохновившись российским проектом [Последнее слово](https://lastword.pythonanywhere.com), решили, что было бы хорошо создать казахстанский аналог.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Как можно добавлять новые записи?
+ Шаблон для почты:
+ ```
+    title: "Имя Фамилия (Название дела)"
+    date: ГОД-МЕСЯЦ-ДЕНЬ ЧАСЫ:МИНУТЫ
+    sourlelink: "https://ссылка-на-последнее-слово.кз"
+    
+    ТЕКСТ
+  ```
+ - Отправить на почту sayratilim (собачка) tuta (точка) io текст с шаблоном повыше.
+ - Создать issue.
+ - Отправить pull request.
+ 
 
-- Bulleted
-- List
+## Как создать `issue`?
+ Шаблон для `issue`:
+ ```
+   title: "Имя Фамилия (Название дела)"
+   date: ГОД-МЕСЯЦ-ДЕНЬ ЧАСЫ:МИНУТЫ
+   sourlelink: "https://ссылка-на-последнее-слово.кз"
+   
+   ТЕКСТ
+ ```
+ 1) Title указываем `title` из шаблона.
+ 2) Заполняем контентом из шаблона
+ 3) Прикрепляем label `слово`
+ 4) Нажимаем кнопку `submit`
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+## Как создать `pull request`?
+ Шаблон для слова:
+ ```
+     ---
+     title: "Имя Фамилия (Название дела)" # заголовок
+     date: 2000-12-31T23:59:59+06:00 # время произнесения речи
+     sourcelink: "https://ссылка-на-последнее-слово.кз" # ссылка 
+     draft: false
+     ---
+     
+     ТЕКСТ
+ ```
+ 1) Устанавливаем `hugo` [по этой ссылке](https://gohugo.io/getting-started/installing/).
+ 2) Клонируем проект `git clone github.com/kazlastword/meta-kazlastword`.
+ 3) Создаем запись `hugo new posts/[name]-[surname]-[day]-[month]-[year].md`.
+ 4) В папке `content/posts/` создалось ваше слово, редактируем по шаблону.
+ 5) Проверяем как оно выглядит `hugo server`.
+ 6) Коммитим & Пушим в свои форки/репозитории.
+ 7) Отправляем `pull request`.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## Внимание
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kazlastword/kazlastword.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Добавление записей
+Имейте ввиду, что если вы отправите `issue` или `pull request`, ваша инициатива
+будет отчетлива видна, и она просто не потеряется. Прозрачность это важно.
 
-### Support or Contact
+### Мета
+Вы можете оставлять `meta-issue` касательно [meta-kazlastword](https://github.com/kazlastword/meta-kazlastword/) 
+(опечатки, стили сайта, и т.д. и т.п.)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
